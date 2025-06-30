@@ -301,9 +301,6 @@
   .text-right {
     text-align: right;
   }
-  .font-\[\'Josefin_Slab\'\] {
-    font-family: 'Josefin Slab';
-  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -497,6 +494,9 @@
 @layer utilities {
   .bg-beige-white {
     background-color: var(--beige-white);
+  }
+  .text-primary {
+    color: var(--primary-color);
   }
   .bg-primary {
     background-color: var(--primary-color);

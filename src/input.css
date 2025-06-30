@@ -1,16 +1,11 @@
 @import "tailwindcss";
 
-/* ===== CUSTOM CSS TEMPLATE ===== */
-
-/* Custom CSS Variables */
 :root {
-  /* Add your custom colors, fonts, etc. here */
   --beige-white: #f4efe2;
   --primary-color: #b84c65;
   --pink-orange-color: #cc7676;
 }
 
-/* Custom Base Styles */
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -21,9 +16,7 @@
   }
 }
 
-/* Custom Components */
 @layer components {
-  /* Reusable component styles */
   .btn-primary {
     @apply bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200;
   }
@@ -54,15 +47,15 @@
     background-color: var(--pink-orange-color);
     border-radius: 0 50% 50% 0;
   }
-
-  /* Add more component classes here */
 }
 
-/* Custom Utilities */
 @layer utilities {
-  /* Custom utility classes */
   .bg-beige-white {
     background-color: var(--beige-white);
+  }
+
+  .text-primary {
+    color: var(--primary-color);
   }
 
   .bg-primary {
@@ -100,11 +93,8 @@
   .placeholder-gray::placeholder {
     color: #6b7280;
   }
-
-  /* Add more utility classes here */
 }
 
-/* Custom Animations */
 @keyframes softPopIn {
   0% {
     opacity: 0;
@@ -118,17 +108,4 @@
 
 .animate-soft-pop-in {
   animation: softPopIn 0.4s ease forwards;
-}
-
-/* Responsive Design Helpers */
-@media (max-width: 640px) {
-  /* Mobile-specific styles */
-}
-
-@media (min-width: 641px) and (max-width: 1024px) {
-  /* Tablet-specific styles */
-}
-
-@media (min-width: 1025px) {
-  /* Desktop-specific styles */
 }
