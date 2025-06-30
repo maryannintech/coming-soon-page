@@ -49,10 +49,11 @@
     z-index: 10;
   }
 
-  .circle-md {
-    @apply w-50 h-50;
+  .circle-big-size {
+    @apply w-32 h-32 md:w-48 md:h-48 lg:w-64 lg:h-64;
     background-color: var(--pink-orange-color);
     border-radius: 50%;
+    z-index: 10;
   }
 
   .half-circle-md {
