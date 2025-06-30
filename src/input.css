@@ -46,7 +46,7 @@
     @apply w-32 h-32 md:w-48 md:h-48 lg:w-40 lg:h-40;
     background-color: var(--pink-orange-color);
     border-radius: 50%;
-    overflow: hidden
+    overflow: hidden;
   }
 
   .half-circle-md {
@@ -89,23 +89,35 @@
     border-color: var(--pink-orange-color);
   }
 
+  .placeholder-primary::placeholder {
+    color: var(--primary-color);
+  }
+
+  .placeholder-pink-orange::placeholder {
+    color: var(--pink-orange-color);
+  }
+
+  .placeholder-gray::placeholder {
+    color: #6b7280;
+  }
+
   /* Add more utility classes here */
 }
 
 /* Custom Animations */
-@keyframes fadeInUp {
-  from {
+@keyframes softPopIn {
+  0% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: scale(0.95);
   }
-  to {
+  100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: scale(1);
   }
 }
 
-.animate-fade-in-up {
-  animation: fadeInUp 0.6s ease-out;
+.animate-soft-pop-in {
+  animation: softPopIn 0.4s ease forwards;
 }
 
 /* Responsive Design Helpers */
