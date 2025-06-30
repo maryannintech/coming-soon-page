@@ -43,17 +43,10 @@
   }
 
   .circle {
-    @apply w-20 h-20;
+    @apply w-32 h-32 md:w-48 md:h-48 lg:w-40 lg:h-40;
     background-color: var(--pink-orange-color);
     border-radius: 50%;
-    z-index: 10;
-  }
-
-  .circle-big-size {
-    @apply w-32 h-32 md:w-48 md:h-48 lg:w-64 lg:h-64;
-    background-color: var(--pink-orange-color);
-    border-radius: 50%;
-    z-index: 10;
+    overflow: hidden
   }
 
   .half-circle-md {
