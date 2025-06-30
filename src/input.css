@@ -44,7 +44,7 @@
   }
 
   .half-circle-md {
-    @apply w-10 h-10;
+    @apply w-30 h-30;
     background-color: var(--pink-orange-color);
     border-radius: 0 50% 50% 0;
     justify-self: start;
