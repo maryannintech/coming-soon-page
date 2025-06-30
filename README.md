@@ -2,6 +2,10 @@
 
 A beautiful, responsive coming soon page built with **Tailwind CSS** - my first time learning and practicing with this framework!
 
+## Live Demo
+
+**View the live site:** [https://maryannintech.github.io/coming-soon-page/](https://maryannintech.github.io/coming-soon-page/)
+
 ## Project Overview
 
 This is a heartfelt coming soon page featuring:
