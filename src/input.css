@@ -40,6 +40,14 @@
     @apply w-20 h-20;
     background-color: var(--pink-orange-color);
     border-radius: 0 50% 50% 0;
+    justify-self: start;
+  }
+
+  .half-circle-md {
+    @apply w-10 h-10;
+    background-color: var(--pink-orange-color);
+    border-radius: 0 50% 50% 0;
+    justify-self: start;
   }
 
   /* Add more component classes here */
