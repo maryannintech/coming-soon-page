@@ -69,6 +69,10 @@
     background-color: var(--primary-color);
   }
 
+  .bg-orange-pink {
+    background-color: var(--pink-orange-color);
+  }
+
   .text-beige-white {
     color: var(--beige-white);
   }
