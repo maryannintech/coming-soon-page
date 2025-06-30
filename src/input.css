@@ -1,2 +1,105 @@
 @import "tailwindcss";
 
+/* ===== CUSTOM CSS TEMPLATE ===== */
+
+/* Custom CSS Variables */
+:root {
+  /* Add your custom colors, fonts, etc. here */
+  --beige-white: #f4efe2;
+  --primary-color: #b84c65;
+  --pink-orange-color: #cc7676;
+}
+
+/* Custom Base Styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Josefin Slab", serif;
+  }
+}
+
+/* Custom Components */
+@layer components {
+  /* Reusable component styles */
+  .btn-primary {
+    @apply bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6;
+  }
+
+  .half-circle {
+    @apply w-20 h-20;
+    background-color: var(--pink-orange-color);
+    border-radius: 0 50% 50% 0;
+  }
+
+  /* Add more component classes here */
+}
+
+/* Custom Utilities */
+@layer utilities {
+  /* Custom utility classes */
+  .bg-beige-white {
+    background-color: var(--beige-white);
+  }
+
+  .bg-primary {
+    background-color: var(--primary-color);
+  }
+
+  .text-beige-white {
+    color: var(--beige-white);
+  }
+
+  .text-pink-orange {
+    color: var(--pink-orange-color);
+  }
+
+  .border-beige-white {
+    border-color: var(--beige-white);
+  }
+
+  .border-pink-orange {
+    border-color: var(--pink-orange-color);
+  }
+
+  /* Add more utility classes here */
+}
+
+/* Custom Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Responsive Design Helpers */
+@media (max-width: 640px) {
+  /* Mobile-specific styles */
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  /* Tablet-specific styles */
+}
+
+@media (min-width: 1025px) {
+  /* Desktop-specific styles */
+}
